@@ -34,6 +34,9 @@ User object is extended by a new *fasUser* object class.
 * *fasIsPrivate*: boolean, writable by self
 * *fasPronoun*: String, writable by self
 * *fasRssUrl*: multi-valued string, writable by self
+* *fasAwayStart*: timestamp, writable by self
+* *fasAwayEnd*: timestamp, writable by self
+
 
 This also applies to stage users.
 

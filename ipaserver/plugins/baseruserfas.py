@@ -34,6 +34,9 @@ fas_user_attributes = [
     "fasisprivate",
     "faspronoun",
     "fasrssurl",
+    "fasawaystart",
+    "fasawayend",
+
 ]
 baseuser.default_attributes.extend(fas_user_attributes)
 
@@ -121,6 +124,16 @@ takes_params = (
         label=_("RSS URL"),
         maxlength=255,
         normalizer=lambda value: value.strip(),
+    ),
+    DateTime(
+        "fasawaystart?",
+        cli_name="fasawaystart",
+        label=_("Time away start"),
+    ),
+    DateTime(
+        "fasawayend?",
+        cli_name="fasawayend",
+        label=_("Time away end"),
     ),
 )
 

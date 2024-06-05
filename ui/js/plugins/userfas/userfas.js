@@ -73,6 +73,14 @@ define([
                     name: 'fasrssurl',
                     $type: 'multivalued',
                     flags: ['w_if_no_aci']
+                }, {
+                    $type: 'datetime',
+                    name: 'fasawaystart',
+                    flags: ['w_if_no_aci']
+                }, {
+                    $type: 'datetime',
+                    name: 'fasawayend',
+                    flags: ['w_if_no_aci']
                 }]
             };
             var fasagreement = {
